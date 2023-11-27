@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     internal class Student
     {
-        private string Name;
+        public string Name;
         private int Alder;
         private string Studieprogram;
         private int StudentID;
@@ -21,12 +21,12 @@ namespace ConsoleApp1
             StudentID = studentId;
         }
 
-        void SkrivUtInfo()
+        public void SkrivUtInfo()
         {
-            Console.WriteLine($"Navn: {Name}" +
-                              $"Alder: {Alder}" +
-                              $"Studieprogram: {Studieprogram}" +
-                              $"StudentID: {StudentID}");
+            Console.WriteLine($"Navn: {Name} \n" +
+                              $"Alder: {Alder} \n" +
+                              $"Studieprogram: {Studieprogram} \n" +
+                              $"StudentID: {StudentID} \n");
         }
     }
 }

@@ -9,8 +9,8 @@ namespace ConsoleApp1
 {
     internal class Fag
     {
-        private String Fagkode;
-        private string Fagnavn;
+        private string Fagkode;
+        public string Fagnavn;
         private int AntallStudiepoeng;
 
         public Fag(string fagkode, string fagnavn, int antallStudiepoeng)
@@ -20,11 +20,11 @@ namespace ConsoleApp1
             AntallStudiepoeng = antallStudiepoeng;
         }
 
-        void SkrivUtInfo()
+        public void SkrivUtInfo()
         {
-            Console.WriteLine($"Fagkode: {Fagkode}" +
-                              $"Fagnavn: {Fagnavn}" +
-                              $"Antall studiepoeng: {AntallStudiepoeng}");
+            Console.WriteLine($"Fagkode: {Fagkode} \n" +
+                              $"Fagnavn: {Fagnavn} \n" +
+                              $"Antall studiepoeng: {AntallStudiepoeng} \n");
         }
     }
 }
