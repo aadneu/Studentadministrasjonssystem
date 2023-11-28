@@ -9,10 +9,17 @@ namespace ConsoleApp1
 {
     internal class Fag
     {
-        private string Fagkode;
+        public string Fagkode;
         public string Fagnavn;
-        private int AntallStudiepoeng;
+        public int AntallStudiepoeng;
+        
+        public List<Karakter> Karakterliste = new List<Karakter>();
 
+        public void LeggTilKarakter(Karakter karakter)
+        {
+            Karakterliste.Add(karakter);
+        } 
+        
         public Fag(string fagkode, string fagnavn, int antallStudiepoeng)
         {
             Fagkode = fagkode;

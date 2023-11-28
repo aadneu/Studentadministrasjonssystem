@@ -9,21 +9,21 @@ namespace ConsoleApp1
 {
     internal class Karakter
     {
-        private Student _student;
-        private Fag _fagnavn;
-        private int _karakterverdi;
+        public Student Student;
+        public Fag Fag;
+        public double Karakterverdi;
 
-        public Karakter(Student student, Fag fagnavn, int karakterverdi)
+        public Karakter(Student student, Fag fagnavn, double karakterverdi)
         {
-            _student = student;
-            _fagnavn = fagnavn;
-            _karakterverdi = karakterverdi;
+            Student = student;
+            Fag = fagnavn;
+            Karakterverdi = karakterverdi;
         }
         public void SkrivUtInfo()
         {
-            Console.WriteLine($"Student: {_student.Name} \n" +
-                              $"Fag: {_fagnavn.Fagnavn} \n" +
-                              $"Karakter: {_karakterverdi} \n");
+            Console.WriteLine($"Student: {Student.Name} \n" +
+                              $"Fag: {Fag.Fagnavn} \n" +
+                              $"Karakter: {Karakterverdi} \n");
         }
     }
 }
